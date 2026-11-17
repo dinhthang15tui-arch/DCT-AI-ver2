@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/api/chat",
+      "destination": "/DCT-AI/api/chat.js"
+    },
+    {
+      "source": "/api/data",
+      "destination": "/DCT-AI/api/data.js"
+    },
+    {
+      "source": "/api/run-pipeline",
+      "destination": "/DCT-AI/api/run-pipeline.js"
+    },
+    {
+      "source": "/api/health",
+      "destination": "/DCT-AI/api/health.js"
+    },
+    {
+      "source": "/api/(.*)",
+      "destination": "/DCT-AI/api/index.js"
+    },
+    {
+      "source": "/((?!DCT-AI/).*)",
+      "destination": "/DCT-AI/$1"
+    }
+  ]
+}
